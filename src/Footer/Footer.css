@@ -1,0 +1,43 @@
+footer{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(170, 170, 170);
+    position: relative;
+    font-weight: 550;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(118, 140, 207);
+    font-family: 'Open Sans', sans-serif;
+}
+footer .row{
+    padding: 1rem 0;
+    margin: 0 !important;
+}
+footer .row > a,
+footer div > a{
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+footer div > a{
+    color: rgba(158, 158, 158, 0.39);
+}
+footer .row > a{
+    color: rgb(128, 153, 228);
+}
+.links{
+    margin-right: 4.5rem;
+    margin-left: 4.5rem;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+    footer .row > a,
+    footer div > a{
+        font-size: .9rem;
+    }
+}

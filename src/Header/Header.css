@@ -1,0 +1,114 @@
+header{
+    background: linear-gradient(87deg,#f5365c 0,#f56036 100%);
+    height: 65vh;
+    font-family: 'Open Sans', sans-serif;
+}
+header, header i{
+    color: #fff;
+}
+header .open-menu{
+    background-color: transparent;
+    outline: none;
+    font-size: 1.6rem;   
+    cursor: pointer;
+}
+.nav-bar{
+    padding: 0 8rem;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.nav-bar a:hover span,
+.nav-bar a:hover i{
+    color: rgba(255, 255, 255, 0.507);
+}
+.nav-bar span{
+    margin: 0 .35rem;
+}
+.nav-bar a, .nav-bar i{   
+    color: rgba(255, 255, 255, 0.87);
+}
+.nav-bar a li.active > span,
+.nav-bar a li.active > i{   
+    color: rgba(255, 255, 255, 0.507);
+}
+.nav-menu{
+    position: absolute;
+    z-index: 5;
+    background-color: #fff;
+    color: #000;
+    top: 20px;
+    left: 60px;
+    right: 60px;
+    border-radius: 6px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 0;
+    transition: ease-in-out .1s all;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+}
+.nav-menu .menu-top{
+    padding: 1.5rem 0;
+}
+.nav-menu .menu-top button{
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.nav-menu .menu-top i{
+    color: #172b4d;
+    font-size: 1.5rem;
+}
+.nav-menu ul{
+    list-style-type: none;
+    padding-bottom: 1rem;
+}
+.nav-menu ul a{   
+    text-decoration: none;
+    color: #172b4d;
+}
+.nav-menu ul a li{  
+    transition: ease-in-out .1s all;
+    padding-bottom: 0rem;
+}
+.nav-menu ul a li span{  
+    font-size: .9rem
+}
+.nav-menu ul a li i{
+    color: #172b4d;
+    font-size: 0.9rem;
+    padding-right: .2rem;
+}
+.welcome{
+    margin: 1.8rem 0;
+}
+.welcome h2{
+    padding-bottom: 10px;
+    font-size: 1.625rem;
+}
+.welcome p{
+    font-weight: 300;
+    color: #ced4da;
+}
+.welcome p, .welcome h2{
+    text-align: center;
+    line-height: 1.6;   
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+@media (min-width: 992px) { 
+    header::after{
+        content: '';
+        background: linear-gradient(87deg,#f5365c 10%,#f56036 100%);
+        position: absolute;
+        top: 55vh;
+        height: 150px;
+        width: 110%;
+        margin-left: -5%;
+        transform: rotate(-3deg);
+    }
+}
